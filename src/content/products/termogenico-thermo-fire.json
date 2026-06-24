@@ -1,0 +1,22 @@
+{
+  "name": "Thermo Fire — Termogênico Avançado",
+  "tagline": "Acelere a queima de gordura",
+  "description": "Fórmula termogênica com cafeína, extrato de pimenta caiena e chá verde para acelerar o metabolismo e potencializar a queima de gordura durante o treino.",
+  "longDescription": "Thermo Fire é um termogênico de alta performance desenvolvido para quem busca acelerar o metabolismo e maximizar a queima de gordura ao longo do dia. Combina cafeína anidra, extrato de pimenta caiena (capsaicina) e catequinas do chá verde — uma sinergia estudada para elevar a termogênese corporal, aumentar a energia e reduzir a sensação de fadiga durante treinos intensos. Indicado para quem já pratica atividade física e busca um empurrão extra no processo de definição.",
+  "benefits": [
+    "Acelera o metabolismo basal",
+    "Aumenta a energia e o foco no treino",
+    "Potencializa a queima de gordura localizada",
+    "Fórmula 100% natural e vegana"
+  ],
+  "howToUse": "Tomar 1 cápsula pela manhã e 1 cápsula 30 minutos antes do treino, com um copo de água. Não exceder 2 cápsulas por dia.",
+  "price": "R$ 89,90",
+  "originalPrice": "R$ 179,90",
+  "discount": "50% OFF",
+  "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+  "badge": "Mais Vendido",
+  "affiliateUrl": "https://exemplo-checkout.com/thermo-fire",
+  "category": "Termogênicos",
+  "rating": 4.9,
+  "reviews": 2847
+}

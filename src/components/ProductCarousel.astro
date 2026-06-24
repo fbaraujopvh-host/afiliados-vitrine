@@ -1,5 +1,22 @@
 ---
-import type { Product } from '../data/products';
+interface Product {
+  slug: string;
+  name: string;
+  tagline: string;
+  description: string;
+  longDescription: string;
+  benefits: string[];
+  howToUse: string;
+  price: string;
+  originalPrice: string;
+  discount: string;
+  image: string;
+  badge?: string;
+  affiliateUrl: string;
+  category: string;
+  rating: number;
+  reviews: number;
+}
 interface Props { products: Product[]; }
 const { products } = Astro.props;
 ---

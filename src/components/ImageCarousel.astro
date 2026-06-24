@@ -1,5 +1,8 @@
 ---
-import { products } from '../data/products';
+import { getCollection } from 'astro:content';
+
+const entries = await getCollection('products');
+const products = entries.map((entry) => ({ ...entry.data, slug: entry.id }));
 ---
 
 <section class="img-carousel-section">

@@ -1,0 +1,22 @@
+{
+  "name": "Slim Detox — Emagrecedor Natural",
+  "tagline": "Desintoxica e reduz o inchaço",
+  "description": "Blend de ingredientes naturais que ajuda a eliminar toxinas, reduzir a retenção de líquidos e diminuir o apetite de forma segura.",
+  "longDescription": "Slim Detox combina extratos vegetais como chá verde, hibisco, gengibre e cavalinha em uma fórmula pensada para apoiar a eliminação de toxinas e reduzir a retenção de líquidos, uma das principais causas do inchaço abdominal. Seus compostos termogênicos leves também ajudam a controlar o apetite entre as refeições, tornando mais fácil manter uma alimentação equilibrada. Ideal para incluir na rotina diária como parte de um programa de reeducação alimentar.",
+  "benefits": [
+    "Reduz a retenção de líquidos",
+    "Ajuda a controlar o apetite",
+    "Auxilia na desintoxicação do organismo",
+    "Sem glúten e sem lactose"
+  ],
+  "howToUse": "Diluir 1 sachê em 200ml de água e consumir 1 a 2 vezes ao dia, preferencialmente antes das refeições principais.",
+  "price": "R$ 69,90",
+  "originalPrice": "R$ 139,90",
+  "discount": "50% OFF",
+  "image": "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=800&q=80",
+  "badge": "🔥 Em Alta",
+  "affiliateUrl": "https://exemplo-checkout.com/slim-detox",
+  "category": "Emagrecedores",
+  "rating": 4.8,
+  "reviews": 3654
+}

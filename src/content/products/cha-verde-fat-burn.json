@@ -1,0 +1,21 @@
+{
+  "name": "Chá Verde Fat Burn — Cápsulas",
+  "tagline": "Antioxidante e acelerador metabólico",
+  "description": "Extrato concentrado de chá verde rico em catequinas, com ação antioxidante e auxílio na aceleração do metabolismo.",
+  "longDescription": "Chá Verde Fat Burn entrega o extrato padronizado de chá verde (Camellia sinensis) em alta concentração de catequinas, especialmente EGCG, um dos antioxidantes mais estudados quando o assunto é metabolismo e controle de peso. Auxilia na aceleração discreta do gasto energético em repouso e oferece proteção celular contra radicais livres, sendo uma opção prática para somar à rotina de quem busca um estilo de vida mais saudável.",
+  "benefits": [
+    "Rico em catequinas e EGCG",
+    "Ação antioxidante",
+    "Auxilia na aceleração do metabolismo",
+    "Cápsulas práticas, sem preparo"
+  ],
+  "howToUse": "Tomar 1 cápsula, 2 vezes ao dia, antes das principais refeições.",
+  "price": "R$ 49,90",
+  "originalPrice": "R$ 89,90",
+  "discount": "44% OFF",
+  "image": "https://images.unsplash.com/photo-1556228720-da4e25e3a7c6?w=800&q=80",
+  "affiliateUrl": "https://exemplo-checkout.com/cha-verde-fatburn",
+  "category": "Emagrecedores",
+  "rating": 4.7,
+  "reviews": 2980
+}

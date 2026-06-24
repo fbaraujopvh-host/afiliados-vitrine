@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel de Conteúdo · FS FitLife</title>
+    <style>
+      #loading {
+        position: fixed; inset: 0;
+        display: flex; flex-direction: column;
+        align-items: center; justify-content: center;
+        font-family: system-ui, sans-serif;
+        background: #161616; color: #9ca3af;
+        gap: 1rem;
+      }
+      .spinner {
+        width: 40px; height: 40px;
+        border: 4px solid #2a2a2a;
+        border-top-color: #71c037;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+      @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+  </head>
+  <body>
+    <div id="loading">
+      <div class="spinner"></div>
+      <p>Carregando painel de conteúdo...</p>
+    </div>
+
+    <!-- Init manual — evita 404 de config.yml -->
+    <script>window.CMS_MANUAL_INIT = true;</script>
+
+    <!-- Decap CMS -->
+    <script src="https://cdn.jsdelivr.net/npm/decap-cms@3.3.3/dist/decap-cms.js"></script>
+
+    <script>
+      document.getElementById('loading').style.display = 'none';
+
+      CMS.init({
+        config: {
+          backend: {
+            name: 'github',
+            repo: 'fbaraujopvh-host/fsfitlife',
+            branch: 'main',
+            base_url: 'https://fsfitlife.vercel.app',
+            auth_endpoint: 'api/auth',
+          },
+          media_folder: 'public/images',
+          public_folder: '/images',
+          collections: [
+            {
+              name: 'products',
+              label: '💊 Produtos',
+              label_singular: 'Produto',
+              folder: 'src/content/products',
+              create: true,
+              delete: true,
+              extension: 'json',
+              format: 'json',
+              identifier_field: 'name',
+              summary: '{{name}} — {{price}}',
+              fields: [
+                { name: 'name', label: 'Nome do Produto', widget: 'string' },
+                { name: 'tagline', label: 'Frase de Destaque', widget: 'string', hint: 'Ex: Acelere a queima de gordura' },
+                { name: 'category', label: 'Categoria', widget: 'string', hint: 'Ex: Termogênicos, Emagrecedores, Proteínas' },
+                { name: 'badge', label: 'Selo (opcional)', widget: 'string', required: false, hint: 'Ex: Mais Vendido, Novo, Premium' },
+                { name: 'rating', label: 'Avaliação (1 a 5)', widget: 'number', value_type: 'float', min: 1, max: 5, step: 0.1, default: 4.8 },
+                { name: 'reviews', label: 'Número de Avaliações', widget: 'number', value_type: 'int', default: 100 },
+                { name: 'price', label: 'Preço Atual', widget: 'string', hint: 'Ex: R$ 89,90' },
+                { name: 'originalPrice', label: 'Preço Original (riscado)', widget: 'string', hint: 'Ex: R$ 179,90' },
+                { name: 'discount', label: 'Texto do Desconto', widget: 'string', hint: 'Ex: 50% OFF' },
+                {
+                  name: 'image',
+                  label: 'Imagem do Produto',
+                  widget: 'image',
+                  choose_url: true,
+                  hint: 'Envie uma foto do produto ou cole a URL de uma imagem',
+                },
+                { name: 'description', label: 'Descrição Curta (vitrine)', widget: 'text', hint: 'Aparece nos cards da página inicial' },
+                { name: 'longDescription', label: 'Descrição Completa (página do produto)', widget: 'text' },
+                {
+                  name: 'benefits',
+                  label: 'Benefícios (lista com check ✓)',
+                  widget: 'list',
+                  field: { name: 'item', label: 'Benefício', widget: 'string' },
+                },
+                { name: 'howToUse', label: 'Como Usar', widget: 'text' },
+                {
+                  name: 'affiliateUrl',
+                  label: 'Link de Afiliado (checkout)',
+                  widget: 'string',
+                  hint: 'Cole aqui o link de checkout do seu programa de afiliado',
+                },
+              ],
+            },
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>

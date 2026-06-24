@@ -1,0 +1,21 @@
+{
+  "name": "Energy Complex — Multivitamínico",
+  "tagline": "Mais energia e imunidade no dia a dia",
+  "description": "Complexo com 12 vitaminas e 8 minerais essenciais para reforçar a imunidade, reduzir o cansaço e manter o foco mental.",
+  "longDescription": "Energy Complex reúne 12 vitaminas (incluindo A, C, D, E e todo o complexo B) e 8 minerais essenciais como zinco, magnésio e selênio em uma única cápsula diária. A fórmula foi desenvolvida para suprir lacunas nutricionais comuns da rotina moderna, ajudando a reduzir o cansaço físico e mental, fortalecer o sistema imunológico e manter o foco e a disposição ao longo do dia.",
+  "benefits": [
+    "12 vitaminas + 8 minerais essenciais",
+    "Reforça o sistema imunológico",
+    "Reduz cansaço físico e mental",
+    "1 cápsula por dia"
+  ],
+  "howToUse": "Tomar 1 cápsula ao dia, junto com uma refeição, com auxílio de água.",
+  "price": "R$ 59,90",
+  "originalPrice": "R$ 99,90",
+  "discount": "40% OFF",
+  "image": "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=800&q=80&sat=-50",
+  "affiliateUrl": "https://exemplo-checkout.com/energy-complex",
+  "category": "Vitaminas & Minerais",
+  "rating": 4.7,
+  "reviews": 1893
+}

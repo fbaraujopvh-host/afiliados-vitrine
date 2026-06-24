@@ -1,0 +1,22 @@
+{
+  "name": "Colágeno Hidrolisado Skin+",
+  "tagline": "Pele, cabelo e unhas mais fortes",
+  "description": "Colágeno tipo 1 e 3 com vitamina C e ácido hialurônico, formulado para melhorar elasticidade da pele e fortalecer cabelos e unhas.",
+  "longDescription": "Colágeno Hidrolisado Skin+ combina colágeno tipo 1 e 3 com vitamina C — essencial para a síntese natural de colágeno no organismo — e ácido hialurônico, conhecido por sua capacidade de reter umidade na pele. A fórmula foi pensada para atuar de dentro para fora, ajudando a reduzir a flacidez, melhorar a elasticidade da pele e fortalecer cabelos e unhas em poucas semanas de uso contínuo.",
+  "benefits": [
+    "Colágeno tipo 1 e 3 de alta absorção",
+    "Enriquecido com vitamina C e ácido hialurônico",
+    "Melhora elasticidade e firmeza da pele",
+    "Sem glúten, sabor neutro"
+  ],
+  "howToUse": "Misturar 1 dose (10g) em água, suco ou vitamina, 1 vez ao dia, preferencialmente em jejum.",
+  "price": "R$ 79,90",
+  "originalPrice": "R$ 159,90",
+  "discount": "50% OFF",
+  "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
+  "badge": "Novo",
+  "affiliateUrl": "https://exemplo-checkout.com/colageno-skin",
+  "category": "Beleza & Pele",
+  "rating": 4.8,
+  "reviews": 3210
+}

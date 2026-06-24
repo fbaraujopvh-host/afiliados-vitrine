@@ -1,0 +1,21 @@
+{
+  "name": "Ômega 3 Ultra Concentrado",
+  "tagline": "Saúde cardiovascular e cerebral",
+  "description": "Óleo de peixe purificado com alta concentração de EPA e DHA, contribuindo para a saúde do coração, cérebro e articulações.",
+  "longDescription": "Ômega 3 Ultra Concentrado utiliza óleo de peixe de águas profundas, purificado e livre de metais pesados, com alta concentração de EPA e DHA por cápsula. Esses ácidos graxos essenciais são amplamente estudados por seu papel na manutenção da saúde cardiovascular, na função cognitiva e na redução de processos inflamatórios nas articulações — sendo um complemento valioso para quem busca mais qualidade de vida a longo prazo.",
+  "benefits": [
+    "Alta concentração de EPA e DHA",
+    "Contribui para a saúde do coração",
+    "Apoia a função cognitiva e a memória",
+    "Cápsulas sem gosto residual de peixe"
+  ],
+  "howToUse": "Tomar 2 cápsulas ao dia, junto às refeições.",
+  "price": "R$ 64,90",
+  "originalPrice": "R$ 119,90",
+  "discount": "45% OFF",
+  "image": "https://images.unsplash.com/photo-1550572017-edd951aa8f25?w=800&q=80",
+  "affiliateUrl": "https://exemplo-checkout.com/omega-3-ultra",
+  "category": "Vitaminas & Minerais",
+  "rating": 4.9,
+  "reviews": 2456
+}

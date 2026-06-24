@@ -1,0 +1,22 @@
+{
+  "name": "Explosive Pump — Pré-Treino",
+  "tagline": "Mais força, foco e resistência",
+  "description": "Pré-treino com cafeína, beta-alanina e citrulina malato para treinos mais intensos, com mais energia e melhor recuperação.",
+  "longDescription": "Explosive Pump foi formulado para atletas que exigem o máximo do próprio desempenho. A combinação de cafeína anidra, beta-alanina e citrulina malato proporciona um aumento perceptível de energia, força e resistência muscular, retardando a fadiga e melhorando o bombeamento sanguíneo durante a série. Ideal para quem treina pesado e quer extrair o máximo de cada repetição.",
+  "benefits": [
+    "Aumenta força e resistência muscular",
+    "Melhora o foco e a energia no treino",
+    "Potencializa o bombeamento muscular (pump)",
+    "Sabores refrescantes"
+  ],
+  "howToUse": "Misturar 1 scoop em 300ml de água e consumir 20 a 30 minutos antes do treino.",
+  "price": "R$ 94,90",
+  "originalPrice": "R$ 169,90",
+  "discount": "44% OFF",
+  "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+  "badge": "Premium",
+  "affiliateUrl": "https://exemplo-checkout.com/explosive-pump",
+  "category": "Pré-Treino",
+  "rating": 4.8,
+  "reviews": 4120
+}

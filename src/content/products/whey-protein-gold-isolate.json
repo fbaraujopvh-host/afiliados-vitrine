@@ -1,0 +1,21 @@
+{
+  "name": "Whey Protein Gold Isolate",
+  "tagline": "Ganho de massa magra acelerado",
+  "description": "Whey protein isolado com 27g de proteína por dose, baixo teor de carboidratos e absorção rápida para recuperação muscular.",
+  "longDescription": "Desenvolvido para atletas e praticantes de musculação que buscam o máximo em qualidade proteica, o Whey Protein Gold Isolate entrega 27g de proteína por dose com perfil completo de aminoácidos essenciais, incluindo alta concentração de BCAAs. Sua filtragem por microfiltração garante baixíssimo teor de carboidratos e gorduras, proporcionando absorção rápida — ideal para o pós-treino, quando o corpo mais precisa de nutrientes para iniciar a recuperação muscular.",
+  "benefits": [
+    "27g de proteína por dose",
+    "Baixo teor de carboidratos e gorduras",
+    "Rica em BCAAs e glutamina",
+    "Disponível em 8 sabores"
+  ],
+  "howToUse": "Misturar 1 scoop (30g) em 200ml de água ou leite, de preferência logo após o treino ou entre as refeições.",
+  "price": "R$ 149,90",
+  "originalPrice": "R$ 259,90",
+  "discount": "42% OFF",
+  "image": "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=800&q=80",
+  "affiliateUrl": "https://exemplo-checkout.com/whey-gold-isolate",
+  "category": "Proteínas",
+  "rating": 4.8,
+  "reviews": 6891
+}

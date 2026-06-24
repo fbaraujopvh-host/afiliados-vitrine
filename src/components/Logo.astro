@@ -1,8 +1,9 @@
 ---
 interface Props {
   size?: number;
+  showSlogan?: boolean;
 }
-const { size = 44 } = Astro.props;
+const { size = 44, showSlogan = true } = Astro.props;
 ---
 
 <div class="brand">
@@ -34,7 +35,7 @@ const { size = 44 } = Astro.props;
 
   <div class="brand-text">
     <span class="name"><span class="fs-fit">FS Fit</span><span class="life">Life</span></span>
-    <span class="slogan">Suplementos & Emagrecedores</span>
+    {showSlogan && <span class="slogan">Suplementos & Emagrecedores</span>}
   </div>
 </div>
 

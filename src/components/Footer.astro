@@ -1,11 +1,12 @@
 ---
+import Logo from './Logo.astro';
 const year = new Date().getFullYear();
 ---
 <footer class="footer">
   <div class="container">
     <div class="top">
       <div class="brand">
-        <span class="logo">🏋️ FS <strong>FitLife</strong></span>
+        <Logo size={36} showSlogan={false} />
         <p>Curadoria de suplementos e emagrecedores com qualidade garantida e os melhores preços do mercado.</p>
       </div>
       <div class="links">
@@ -46,14 +47,7 @@ const year = new Date().getFullYear();
     gap: 3rem;
     margin-bottom: 2.5rem;
   }
-  .brand .logo {
-    font-size: 1.3rem;
-    font-weight: 700;
-    display: block;
-    margin-bottom: 0.75rem;
-  }
-  .brand .logo strong { color: var(--primary); }
-  .brand p { font-size: 0.85rem; color: var(--gray-400); line-height: 1.65; }
+  .brand p { font-size: 0.85rem; color: var(--gray-400); line-height: 1.65; margin-top: 0.85rem; }
   .links { display: flex; flex-direction: column; gap: 0.6rem; }
   .links h4 { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gray-400); margin-bottom: 0.25rem; }
   .links a { font-size: 0.85rem; color: var(--gray-400); transition: color 0.2s; }

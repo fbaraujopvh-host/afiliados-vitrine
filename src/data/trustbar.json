@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "icon": "🔒", "title": "Compra Segura", "subtitle": "Ambiente 100% protegido" },
+    { "icon": "📦", "title": "Entrega Garantida", "subtitle": "Rastreamento em tempo real" },
+    { "icon": "💳", "title": "Parcelamento", "subtitle": "Em até 12x sem juros" },
+    { "icon": "↩️", "title": "30 dias de garantia", "subtitle": "Devolução sem perguntas" }
+  ]
+}

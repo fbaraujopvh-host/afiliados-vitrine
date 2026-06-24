@@ -51,6 +51,94 @@
           public_folder: '/images',
           collections: [
             {
+              name: 'settings',
+              label: '⚙️ Página Inicial',
+              files: [
+                {
+                  name: 'header',
+                  label: '🔝 Cabeçalho',
+                  file: 'src/data/header.json',
+                  format: 'json',
+                  fields: [
+                    { name: 'tagline', label: 'Frase ao lado da logo', widget: 'string' },
+                  ],
+                },
+                {
+                  name: 'hero',
+                  label: '🦸 Topo da Página (Hero)',
+                  file: 'src/data/hero.json',
+                  format: 'json',
+                  fields: [
+                    { name: 'badge', label: 'Selo Pequeno', widget: 'string', hint: 'Ex: 🔥 Ofertas Exclusivas' },
+                    { name: 'title', label: 'Título (linha normal)', widget: 'string' },
+                    { name: 'titleHighlight', label: 'Título (linha colorida)', widget: 'string' },
+                    { name: 'subtitle', label: 'Subtítulo', widget: 'text' },
+                    { name: 'stat1Number', label: 'Estatística 1 — Número', widget: 'string', hint: 'Ex: +50mil' },
+                    { name: 'stat1Label', label: 'Estatística 1 — Legenda', widget: 'string', hint: 'Ex: Clientes satisfeitos' },
+                    { name: 'stat2Number', label: 'Estatística 2 — Número', widget: 'string', hint: 'Ex: 100%' },
+                    { name: 'stat2Label', label: 'Estatística 2 — Legenda', widget: 'string', hint: 'Ex: Garantia de entrega' },
+                    { name: 'stat3Number', label: 'Estatística 3 — Número', widget: 'string', hint: 'Ex: 4.9★' },
+                    { name: 'stat3Label', label: 'Estatística 3 — Legenda', widget: 'string', hint: 'Ex: Avaliação média' },
+                  ],
+                },
+                {
+                  name: 'trustbar',
+                  label: '🛡️ Selos de Confiança',
+                  file: 'src/data/trustbar.json',
+                  format: 'json',
+                  fields: [
+                    {
+                      name: 'items',
+                      label: 'Selos',
+                      widget: 'list',
+                      fields: [
+                        { name: 'icon', label: 'Ícone (emoji)', widget: 'string' },
+                        { name: 'title', label: 'Título', widget: 'string' },
+                        { name: 'subtitle', label: 'Legenda', widget: 'string' },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  name: 'testimonials',
+                  label: '💬 Depoimentos',
+                  file: 'src/data/testimonials.json',
+                  format: 'json',
+                  fields: [
+                    { name: 'title', label: 'Título (linha normal)', widget: 'string' },
+                    { name: 'titleHighlight', label: 'Título (linha colorida)', widget: 'string' },
+                    {
+                      name: 'items',
+                      label: 'Depoimentos',
+                      widget: 'list',
+                      fields: [
+                        { name: 'name', label: 'Nome do Cliente', widget: 'string' },
+                        { name: 'city', label: 'Cidade, Estado', widget: 'string' },
+                        { name: 'text', label: 'Texto do Depoimento', widget: 'text' },
+                        { name: 'stars', label: 'Estrelas (1 a 5)', widget: 'number', value_type: 'int', min: 1, max: 5, default: 5 },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  name: 'footer',
+                  label: '🦶 Rodapé',
+                  file: 'src/data/footer.json',
+                  format: 'json',
+                  fields: [
+                    { name: 'brandDescription', label: 'Descrição da Marca', widget: 'text' },
+                    {
+                      name: 'categories',
+                      label: 'Categorias',
+                      widget: 'list',
+                      field: { name: 'item', label: 'Categoria', widget: 'string' },
+                    },
+                    { name: 'disclaimer', label: 'Aviso de Afiliação', widget: 'text' },
+                  ],
+                },
+              ],
+            },
+            {
               name: 'products',
               label: '💊 Produtos',
               label_singular: 'Produto',

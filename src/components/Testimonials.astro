@@ -1,19 +1,29 @@
 ---
-const testimonials = [
-  { name: "Ana Paula S.", text: "Recebi o produto muito rápido e o resultado foi incrível! Recomendo demais.", stars: 5, city: "São Paulo, SP" },
-  { name: "Carlos M.", text: "Comprei pelo link do site e foi tudo perfeito. Atendimento nota 10!", stars: 5, city: "Rio de Janeiro, RJ" },
-  { name: "Fernanda L.", text: "Produto de altíssima qualidade e preço justo. Já indiquei para toda família.", stars: 5, city: "Belo Horizonte, MG" },
-  { name: "Roberto A.", text: "Entrega antes do prazo e produto idêntico às fotos. Muito satisfeito!", stars: 5, city: "Curitiba, PR" },
-  { name: "Mariana T.", text: "Não achei esse preço em lugar nenhum. Garanti na hora sem arrependimento.", stars: 5, city: "Fortaleza, CE" },
-  { name: "Lucas P.", text: "Qualidade impressionante pelo preço. Voltarei a comprar com certeza.", stars: 5, city: "Porto Alegre, RS" },
-];
+interface Testimonial { name: string; city: string; text: string; stars: number; }
+interface Props {
+  title?: string;
+  titleHighlight?: string;
+  items?: Testimonial[];
+}
+const {
+  title = 'O que nossos',
+  titleHighlight = 'clientes dizem',
+  items = [
+    { name: "Ana Paula S.", text: "Recebi o produto muito rápido e o resultado foi incrível! Recomendo demais.", stars: 5, city: "São Paulo, SP" },
+    { name: "Carlos M.", text: "Comprei pelo link do site e foi tudo perfeito. Atendimento nota 10!", stars: 5, city: "Rio de Janeiro, RJ" },
+    { name: "Fernanda L.", text: "Produto de altíssima qualidade e preço justo. Já indiquei para toda família.", stars: 5, city: "Belo Horizonte, MG" },
+    { name: "Roberto A.", text: "Entrega antes do prazo e produto idêntico às fotos. Muito satisfeito!", stars: 5, city: "Curitiba, PR" },
+    { name: "Mariana T.", text: "Não achei esse preço em lugar nenhum. Garanti na hora sem arrependimento.", stars: 5, city: "Fortaleza, CE" },
+    { name: "Lucas P.", text: "Qualidade impressionante pelo preço. Voltarei a comprar com certeza.", stars: 5, city: "Porto Alegre, RS" },
+  ],
+} = Astro.props;
 ---
 
 <section class="testimonials">
   <div class="container">
-    <h2>O que nossos <span class="highlight">clientes dizem</span></h2>
+    <h2>{title} <span class="highlight">{titleHighlight}</span></h2>
     <div class="grid">
-      {testimonials.map(t => (
+      {items.map(t => (
         <div class="card">
           <div class="stars">{"★".repeat(t.stars)}</div>
           <p>"{t.text}"</p>

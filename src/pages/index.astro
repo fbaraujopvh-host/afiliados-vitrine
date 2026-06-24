@@ -8,19 +8,24 @@ import ImageCarousel from '../components/ImageCarousel.astro';
 import ProductCarousel from '../components/ProductCarousel.astro';
 import Testimonials from '../components/Testimonials.astro';
 import Footer from '../components/Footer.astro';
+import headerData from '../data/header.json';
+import heroData from '../data/hero.json';
+import trustbarData from '../data/trustbar.json';
+import testimonialsData from '../data/testimonials.json';
+import footerData from '../data/footer.json';
 
 const entries = await getCollection('products');
 const products = entries.map((entry) => ({ ...entry.data, slug: entry.id }));
 ---
 
 <Layout title="FS FitLife — Suplementos e Emagrecedores">
-  <Header />
+  <Header tagline={headerData.tagline} />
   <main>
-    <Hero />
+    <Hero {...heroData} />
     <ImageCarousel />
-    <TrustBar />
+    <TrustBar items={trustbarData.items} />
     <ProductCarousel products={products} />
-    <Testimonials />
+    <Testimonials {...testimonialsData} />
   </main>
-  <Footer />
+  <Footer {...footerData} />
 </Layout>

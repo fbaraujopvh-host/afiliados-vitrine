@@ -1,35 +1,26 @@
 ---
+interface TrustItem { icon: string; title: string; subtitle: string; }
+interface Props { items?: TrustItem[]; }
+const {
+  items = [
+    { icon: '🔒', title: 'Compra Segura', subtitle: 'Ambiente 100% protegido' },
+    { icon: '📦', title: 'Entrega Garantida', subtitle: 'Rastreamento em tempo real' },
+    { icon: '💳', title: 'Parcelamento', subtitle: 'Em até 12x sem juros' },
+    { icon: '↩️', title: '30 dias de garantia', subtitle: 'Devolução sem perguntas' },
+  ],
+} = Astro.props;
 ---
 <section class="trust">
   <div class="container">
-    <div class="trust-item">
-      <span class="icon">🔒</span>
-      <div>
-        <strong>Compra Segura</strong>
-        <span>Ambiente 100% protegido</span>
+    {items.map((item) => (
+      <div class="trust-item">
+        <span class="icon">{item.icon}</span>
+        <div>
+          <strong>{item.title}</strong>
+          <span>{item.subtitle}</span>
+        </div>
       </div>
-    </div>
-    <div class="trust-item">
-      <span class="icon">📦</span>
-      <div>
-        <strong>Entrega Garantida</strong>
-        <span>Rastreamento em tempo real</span>
-      </div>
-    </div>
-    <div class="trust-item">
-      <span class="icon">💳</span>
-      <div>
-        <strong>Parcelamento</strong>
-        <span>Em até 12x sem juros</span>
-      </div>
-    </div>
-    <div class="trust-item">
-      <span class="icon">↩️</span>
-      <div>
-        <strong>30 dias de garantia</strong>
-        <span>Devolução sem perguntas</span>
-      </div>
-    </div>
+    ))}
   </div>
 </section>
 

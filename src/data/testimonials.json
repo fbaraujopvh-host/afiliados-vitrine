@@ -1,0 +1,12 @@
+{
+  "title": "O que nossos",
+  "titleHighlight": "clientes dizem",
+  "items": [
+    { "name": "Ana Paula S.", "city": "São Paulo, SP", "text": "Recebi o produto muito rápido e o resultado foi incrível! Recomendo demais.", "stars": 5 },
+    { "name": "Carlos M.", "city": "Rio de Janeiro, RJ", "text": "Comprei pelo link do site e foi tudo perfeito. Atendimento nota 10!", "stars": 5 },
+    { "name": "Fernanda L.", "city": "Belo Horizonte, MG", "text": "Produto de altíssima qualidade e preço justo. Já indiquei para toda família.", "stars": 5 },
+    { "name": "Roberto A.", "city": "Curitiba, PR", "text": "Entrega antes do prazo e produto idêntico às fotos. Muito satisfeito!", "stars": 5 },
+    { "name": "Mariana T.", "city": "Fortaleza, CE", "text": "Não achei esse preço em lugar nenhum. Garanti na hora sem arrependimento.", "stars": 5 },
+    { "name": "Lucas P.", "city": "Porto Alegre, RS", "text": "Qualidade impressionante pelo preço. Voltarei a comprar com certeza.", "stars": 5 }
+  ]
+}

@@ -1,24 +1,48 @@
 ---
+interface Props {
+  badge?: string;
+  title?: string;
+  titleHighlight?: string;
+  subtitle?: string;
+  stat1Number?: string;
+  stat1Label?: string;
+  stat2Number?: string;
+  stat2Label?: string;
+  stat3Number?: string;
+  stat3Label?: string;
+}
+const {
+  badge = '🔥 Ofertas Exclusivas',
+  title = 'Suplementos e emagrecedores que',
+  titleHighlight = 'realmente funcionam',
+  subtitle = 'Selecionamos os melhores suplementos, termogênicos e emagrecedores do mercado com os melhores preços. Aproveite nossas ofertas e compre com segurança.',
+  stat1Number = '+50mil',
+  stat1Label = 'Clientes satisfeitos',
+  stat2Number = '100%',
+  stat2Label = 'Garantia de entrega',
+  stat3Number = '4.9★',
+  stat3Label = 'Avaliação média',
+} = Astro.props;
 ---
 <section class="hero">
   <div class="container">
-    <div class="badge">🔥 Ofertas Exclusivas</div>
-    <h1>Suplementos e emagrecedores que <span class="highlight">realmente funcionam</span></h1>
-    <p>Selecionamos os melhores suplementos, termogênicos e emagrecedores do mercado com os melhores preços. Aproveite nossas ofertas e compre com segurança.</p>
+    <div class="badge">{badge}</div>
+    <h1>{title} <span class="highlight">{titleHighlight}</span></h1>
+    <p>{subtitle}</p>
     <div class="stats">
       <div class="stat">
-        <strong>+50mil</strong>
-        <span>Clientes satisfeitos</span>
+        <strong>{stat1Number}</strong>
+        <span>{stat1Label}</span>
       </div>
       <div class="divider"></div>
       <div class="stat">
-        <strong>100%</strong>
-        <span>Garantia de entrega</span>
+        <strong>{stat2Number}</strong>
+        <span>{stat2Label}</span>
       </div>
       <div class="divider"></div>
       <div class="stat">
-        <strong>4.9★</strong>
-        <span>Avaliação média</span>
+        <strong>{stat3Number}</strong>
+        <span>{stat3Label}</span>
       </div>
     </div>
   </div>

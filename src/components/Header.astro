@@ -1,10 +1,12 @@
 ---
 import Logo from './Logo.astro';
+interface Props { tagline?: string; }
+const { tagline = 'Suplementos e emagrecedores selecionados para você' } = Astro.props;
 ---
 <header class="header">
   <div class="container">
     <Logo />
-    <p class="tagline">Suplementos e emagrecedores selecionados para você</p>
+    <p class="tagline">{tagline}</p>
   </div>
 </header>
 

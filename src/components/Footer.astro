@@ -1,5 +1,15 @@
 ---
 import Logo from './Logo.astro';
+interface Props {
+  brandDescription?: string;
+  categories?: string[];
+  disclaimer?: string;
+}
+const {
+  brandDescription = 'Curadoria de suplementos e emagrecedores com qualidade garantida e os melhores preços do mercado.',
+  categories = ['Termogênicos', 'Emagrecedores', 'Proteínas', 'Vitaminas & Minerais'],
+  disclaimer = 'Este site contém links de afiliados. Ao comprar através deles, você apoia nosso trabalho sem custo extra. Os produtos anunciados não substituem orientação médica ou nutricional profissional.',
+} = Astro.props;
 const year = new Date().getFullYear();
 ---
 <footer class="footer">
@@ -7,7 +17,7 @@ const year = new Date().getFullYear();
     <div class="top">
       <div class="brand">
         <Logo size={36} showSlogan={false} />
-        <p>Curadoria de suplementos e emagrecedores com qualidade garantida e os melhores preços do mercado.</p>
+        <p>{brandDescription}</p>
       </div>
       <div class="links">
         <h4>Links</h4>
@@ -17,15 +27,12 @@ const year = new Date().getFullYear();
       </div>
       <div class="links">
         <h4>Categorias</h4>
-        <a href="#">Termogênicos</a>
-        <a href="#">Emagrecedores</a>
-        <a href="#">Proteínas</a>
-        <a href="#">Vitaminas & Minerais</a>
+        {categories.map((c) => <a href="#">{c}</a>)}
       </div>
     </div>
     <div class="bottom">
       <p>© {year} FS FitLife. Todos os direitos reservados.</p>
-      <p class="disclaimer">Este site contém links de afiliados. Ao comprar através deles, você apoia nosso trabalho sem custo extra. Os produtos anunciados não substituem orientação médica ou nutricional profissional.</p>
+      <p class="disclaimer">{disclaimer}</p>
     </div>
   </div>
 </footer>
